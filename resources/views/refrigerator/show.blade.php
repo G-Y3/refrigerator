@@ -18,6 +18,9 @@
             @foreach ($refrigerator->foods as $food)
                 <div class="card mt-4">
                     <div class="card-header">{{ $food->name }}
+                        <div>
+                            <a href="https://park.ajinomoto.co.jp/recipe/search/?search_word={{ $food->name }}" target="cookbook"><button>レシピ</button></a>
+                        </div>
                         <div class="mt-2 ">
 
                             <form action="/refrigerators/{{ $refrigerator->id}}/foods/{{ $food->id}}" method = "post">

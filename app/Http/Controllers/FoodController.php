@@ -43,12 +43,12 @@ class FoodController extends Controller
     public function faststore(\App\Refrigerator $refrigerator)
     {
         $fd = array(
-            "apple" => 86400*10,
-            "banana" => 86400*4,
-            "milk" => 86400*7,
-            "chicken" => 86400*3,
-            "cake" => 86400*2,
-            "cookie" => 86400*5,
+            "リンゴ" => 86400*10,
+            "バナナ" => 86400*4,
+            "牛乳" => 86400*7,
+            "鶏肉" => 86400*3,
+            "ケーキ" => 86400*2,
+            "クッキー" => 86400*5,
         );
         $data = request()->food;
         if($data ==null){

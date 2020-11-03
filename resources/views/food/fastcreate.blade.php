@@ -43,28 +43,28 @@
 
                     <div class="card-body">
                         <div style="font-size: 300%">
-                            <input class="ip" type="radio" name="food[1]" id="apple" value="apple" style="zoom: 220%;">
-                            apple
+                            <input class="ip" type="radio" name="food[1]" id="apple" value="リンゴ" style="zoom: 220%;">
+                            リンゴ
                         </div>
                         <div style="font-size: 300%">
-                            <input class="ip" type="radio" name="food[2]" id="banana" value="banana" style="zoom: 220%;">
-                            banana
+                            <input class="ip" type="radio" name="food[2]" id="banana" value="バナナ" style="zoom: 220%;">
+                            バナナバナナ
                         </div>
                         <div style="font-size: 300%">
-                            <input class="ip" type="radio" name="food[3]" id="milk" value="milk" style="zoom: 220%;">
-                            milk
+                            <input class="ip" type="radio" name="food[3]" id="milk" value="牛乳" style="zoom: 220%;">
+                            牛乳
                         </div>
                         <div style="font-size: 300%">
-                            <input class="ip" type="radio" name="food[4]" id="chicken" value="chicken" style="zoom: 220%;">
-                            chicken
+                            <input class="ip" type="radio" name="food[4]" id="chicken" value="鶏肉" style="zoom: 220%;">
+                            鶏肉
                         </div>
                         <div style="font-size: 300%">
-                            <input class="ip" type="radio" name="food[5]" id="cake" value="cake" style="zoom: 220%;">
-                            cake
+                            <input class="ip" type="radio" name="food[5]" id="cake" value="ケーキ" style="zoom: 220%;">
+                            ケーキ
                         </div>
                         <div style="font-size: 300%">
-                            <input class="ip" type="radio" name="food[6]" id="cookie" value="cookie" style="zoom: 220%;">
-                            cookie
+                            <input class="ip" type="radio" name="food[6]" id="cookie" value="クッキー" style="zoom: 220%;">
+                            クッキー
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Add Food</button>
