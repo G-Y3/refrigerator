@@ -68,10 +68,8 @@ class FoodController extends Controller
             $food = $refrigerator->foods()->create($temp);
         }
         return redirect('/refrigerators/' .$refrigerator->id);
-        
-
-
-    
-        
+    }
+    public function camera(\App\Refrigerator $refrigerator){
+        return view('food.camera',compact('refrigerator'));
     }
 }

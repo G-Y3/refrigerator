@@ -31,3 +31,5 @@ Route::delete('/refrigerators/{refrigerator}/foods/{food}','FoodController@destr
 
 Route::get('/refrigerators/{refrigerator}/foods/fastcreate','FoodController@fastcreate');
 Route::post('/refrigerators/{refrigerator}/foods/fastcreate','FoodController@faststore');
+
+Route::get('/refrigerators/{refrigerator}/foods/camera','FoodController@camera');
