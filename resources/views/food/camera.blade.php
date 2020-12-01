@@ -3,7 +3,7 @@
 <script src="lib/qrcode.js"></script>
 
 <div>
-    <div class="qr-btn" node-type="qr-btn">扫描二维码1
-        <input node-type="jsbridge" type="file" name="myPhoto" value="扫描二维码1" />
+    <div class="qr-btn" node-type="qr-btn">scan your Qrcode
+        <input node-type="jsbridge" type="file" name="myPhoto" value="scan your Qrcode" />
     </div>
 </div>
