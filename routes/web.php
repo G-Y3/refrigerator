@@ -33,3 +33,4 @@ Route::get('/refrigerators/{refrigerator}/foods/fastcreate','FoodController@fast
 Route::post('/refrigerators/{refrigerator}/foods/fastcreate','FoodController@faststore');
 
 Route::get('/refrigerators/{refrigerator}/foods/camera','FoodController@camera');
+Route::post('/refrigerators/{refrigerator}/foods/camera','FoodController@camerastore');
