@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use phpQuery;
 
 class FoodController extends Controller
 {
@@ -68,10 +69,35 @@ class FoodController extends Controller
             $food = $refrigerator->foods()->create($temp);
         }
         return redirect('/refrigerators/' .$refrigerator->id);
-        
+    }
+    public function camera(\App\Refrigerator $refrigerator)
+    {
+        return view('food.camera',compact('refrigerator'));
+    }
 
+    public function camerastore(\App\Refrigerator $refrigerator)
+    {
+        $data = request()->validate([
+            'barcode' => 'required',
+            'shelf_life' =>'required',
+        ]);
+        //$path = base_path()."/public/phpQuery-onefile.php";
+        $path = "./phpQuery-onefile.php";
 
-    
-        
+        require_once($path);
+
+        $html = file_get_contents("https://www.janken.jp/goods/jk_catalog_syosai.php?jan=".$data['barcode']);
+
+        $name =  phpQuery::newDocument($html)->find("#gname")->text();
+
+        $temp = $temp = array(
+            'name' => $name,
+            'production_data' => date("Y/m/d"),
+            'shelf_life' => $data['shelf_life'],
+        );
+
+        $food = $refrigerator->foods()->create($temp);
+
+        return redirect('/refrigerators/' .$refrigerator->id);
     }
 }

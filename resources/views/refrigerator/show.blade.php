@@ -10,6 +10,7 @@
                 <div class="card-body">
                     <div><a href="/refrigerators/{{ $refrigerator->id}}/foods/create" class="btn btn-dark">Add food</a></div>
                     <div class="mt-2"><a href="/refrigerators/{{ $refrigerator->id}}/foods/fastcreate" class="btn btn-dark">Add food Fast</a></div>
+                    <div class="mt-2"><a href="/refrigerators/{{ $refrigerator->id}}/foods/camera" class="btn btn-dark">camera</a></div>
                 </div>
 
                 
