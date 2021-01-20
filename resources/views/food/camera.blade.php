@@ -39,6 +39,7 @@ $(function() {var App = {
                     alert("バーコードは:" + result.codeResult.code);
                     var res = result.codeResult.code
                     var myUrl = "/refrigerators/camera"
+                    document.getElementById('exampleInputbarcode').value = res;
                     //window.open("https://www.janken.jp/goods/jk_catalog_syosai.php?jan=" + result.codeResult.code);
                 }else{
                     alert("バーコードを認識できません");
@@ -47,7 +48,7 @@ $(function() {var App = {
         },
         state: {
             inputStream: {
-                size: 400,
+                size: 800,
                 singleChannel: false
             },
             locator: {
